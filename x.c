@@ -230,14 +230,14 @@ static char *usedfont = NULL;
 static double usedfontsize = 0;
 static double defaultfontsize = 0;
 
-static char *opt_class = NULL;
-static char **opt_cmd  = NULL;
-static char *opt_embed = NULL;
-static char *opt_font  = NULL;
-static char *opt_io    = NULL;
-static char *opt_line  = NULL;
-static char *opt_name  = NULL;
-static char *opt_title = NULL;
+static char *opt_class        = NULL;
+static char **opt_cmd         = NULL;
+static char *opt_embed        = NULL;
+static char *opt_font         = NULL;
+static char *opt_io           = NULL;
+static char *opt_line         = NULL;
+static char *opt_name         = NULL;
+static char *opt_title        = NULL;
 
 static int oldbutton = 3; /* button event on startup: 3 = release */
 
@@ -1948,6 +1948,9 @@ main(int argc, char *argv[])
 	case 't':
 	case 'T':
 		opt_title = EARGF(usage());
+		break;
+	case 'u':
+		usealtcolors = 1;
 		break;
 	case 'w':
 		opt_embed = EARGF(usage());
