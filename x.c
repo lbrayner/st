@@ -2034,6 +2034,9 @@ main(int argc, char *argv[])
 	case 'T':
 		opt_title = EARGF(usage());
 		break;
+	case 'u':
+		usealtcolors = 1;
+		break;
 	case 'w':
 		opt_embed = EARGF(usage());
 		break;
