@@ -308,6 +308,7 @@ swapcolors(const Arg *dummy)
 {
  usealtcolors = !usealtcolors;
  xloadcols();
+ xclear(0, 0, win.w, win.h);
  redraw();
 }
 
