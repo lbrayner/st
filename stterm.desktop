@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=st - simple terminal
+Comment=st is a simple terminal implementation for X
+StartupWMClass=st-256color
+Keywords=shell;prompt;command;commandline;cmd;
+Exec=/usr/local/bin/stterm
+Icon=utilities-terminal
+Type=Application
+Terminal=false
+Categories=System;TerminalEmulator;
