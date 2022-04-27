@@ -5,11 +5,17 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Iosevka Term:size=12";
 /* Spare fonts */
 static char *font2[] = {
 /*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
 /*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
+    /* https://git.suckless.org/st/file/FAQ.html#l168
+     * Xft makes st crash when rendering color emojis
+     *
+     * The solution is to not use color emoji.
+     * */
+    "Symbola:size=12",
 };
 
 static int borderpx = 2;
